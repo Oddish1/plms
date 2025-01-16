@@ -30,10 +30,14 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = "com.plms.Main"
+    mainClass.set("com.plms.Main")
 }
 
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
+}
+
+tasks.named<JavaExec>("run") {
+		standardInput = System.`in` // allow terminal input
 }
