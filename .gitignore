@@ -1,0 +1,16 @@
+# Gradle files
+.gradle/
+build/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Java compiled files
+*.class
+
+# Java logs
+hs_err_pid*
